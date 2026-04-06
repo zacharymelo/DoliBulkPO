@@ -304,7 +304,7 @@ if (isModEnabled('project')) {
 print '<tr>';
 print '<td class="titlefieldcreate">'.$langs->trans('IncludeBuyPrices').'</td>';
 print '<td>';
-print '<input type="checkbox" name="include_prices" id="bulkpo-include-prices" value="1"> ';
+print '<input type="checkbox" name="include_prices" id="bulkpo-include-prices" value="1" checked> ';
 print '<span class="opacitymedium small">'.$langs->trans('IncludeBuyPricesDesc').'</span>';
 print '</td>';
 print '</tr>';
