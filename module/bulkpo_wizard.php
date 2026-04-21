@@ -269,7 +269,7 @@ print '</tr>';
 
 // Payment Mode
 print '<tr>';
-print '<td class="titlefieldcreate">'.$langs->trans('PaymentMode').'</td>';
+print '<td class="titlefieldcreate">'.$langs->trans('BulkpoPaymentMode').'</td>';
 print '<td>';
 $form->select_types_paiements(GETPOSTISSET('mode_reglement_id') ? GETPOSTINT('mode_reglement_id') : 0, 'mode_reglement_id', '', 0, 1, 0, 0, 1);
 print '</td>';
@@ -286,7 +286,7 @@ print '</tr>';
 
 // Supplier Reference
 print '<tr>';
-print '<td class="titlefieldcreate">'.$langs->trans('RefSupplier').'</td>';
+print '<td class="titlefieldcreate">'.$langs->trans('BulkpoRefSupplier').'</td>';
 print '<td>';
 print '<input type="text" name="ref_supplier" class="maxwidth200" value="'.dol_escape_htmltag(GETPOST('ref_supplier', 'alpha')).'">';
 print '</td>';
@@ -465,9 +465,9 @@ print '<table class="noborder centpercent" id="bulkpo-product-table">';
 print '<thead id="bulkpo-thead">';
 print '<tr class="liste_titre">';
 print '<th class="center" width="30"><input type="checkbox" id="bulkpo-select-all" title="'.$langs->trans('SelectAll').'"></th>';
-print_liste_field_titre($langs->trans('ProductRef'), $_SERVER['PHP_SELF'], 'p.ref', '', $param, '', $sortfield, $sortorder);
-print_liste_field_titre($langs->trans('ProductLabel'), $_SERVER['PHP_SELF'], 'p.label', '', $param, '', $sortfield, $sortorder);
-print_liste_field_titre($langs->trans('ProductType'), $_SERVER['PHP_SELF'], 'p.fk_product_type', '', $param, '', $sortfield, $sortorder);
+print_liste_field_titre($langs->trans('BulkpoProductRef'), $_SERVER['PHP_SELF'], 'p.ref', '', $param, '', $sortfield, $sortorder);
+print_liste_field_titre($langs->trans('BulkpoProductLabel'), $_SERVER['PHP_SELF'], 'p.label', '', $param, '', $sortfield, $sortorder);
+print_liste_field_titre($langs->trans('BulkpoProductType'), $_SERVER['PHP_SELF'], 'p.fk_product_type', '', $param, '', $sortfield, $sortorder);
 print '<th>'.$langs->trans('Barcode').'</th>';
 print_liste_field_titre($langs->trans('BuyPrice'), $_SERVER['PHP_SELF'], 'p.price', '', $param, 'class="right"', $sortfield, $sortorder);
 print '<th class="right">'.$langs->trans('Qty').'</th>';
@@ -525,8 +525,8 @@ print ' <a href="#" id="bulkpo-clear-all" class="bulkpo-clear-link">'.$langs->tr
 print '</div>';
 print '<table class="noborder centpercent" id="bulkpo-staging-table">';
 print '<thead><tr class="liste_titre">';
-print '<th>'.$langs->trans('ProductRef').'</th>';
-print '<th>'.$langs->trans('ProductLabel').'</th>';
+print '<th>'.$langs->trans('BulkpoProductRef').'</th>';
+print '<th>'.$langs->trans('BulkpoProductLabel').'</th>';
 print '<th class="right">'.$langs->trans('Qty').'</th>';
 print '<th class="center" width="40"></th>';
 print '</tr></thead>';

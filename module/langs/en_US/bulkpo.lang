@@ -13,9 +13,9 @@ SelectVendor = Select Vendor (Supplier)
 
 # Order details
 PaymentTerms = Payment Terms
-PaymentMode = Payment Mode
+BulkpoPaymentMode = Payment Mode
 PlannedDeliveryDate = Planned Delivery Date
-RefSupplier = Supplier Reference
+BulkpoRefSupplier = Supplier Reference
 ProjectLink = Project
 
 # Staging area
@@ -25,14 +25,12 @@ ProductsSelectedCount = %s product(s) selected
 ClearAll = Clear All
 
 # Product list
-ProductRef = Product Ref
-ProductLabel = Label
-ProductType = Type
+BulkpoProductRef = Product Ref
+BulkpoProductLabel = Label
+BulkpoProductType = Type
 Barcode = Barcode
 BuyPrice = Buy Price
-Qty = Qty
-SelectAll = Select All
-SupplierRef = Supplier Ref
+BulkpoSupplierRef = Supplier Ref
 SupplierPrice = Supplier Price
 
 # Vendor filter
